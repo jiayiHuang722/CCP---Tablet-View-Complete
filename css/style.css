@@ -1,0 +1,142 @@
+.skip-link{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+a.skip-link:focus{
+  position:static;
+  width:auto;
+  height:auto;
+}
+body{
+    margin:5px;
+    padding:5px;
+    line-height:1.15;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+ }
+  
+ h1,h2, h3{
+    font-weight: bold;
+    margin:15px 0px; 
+ }
+
+ h1{
+   font-size: 46px;
+ }
+
+ h2{
+    font-size: 32px;
+    position: relative;
+  }
+
+h3{
+    font-size: 24px;
+  }
+
+h2:before{
+    content: "🧸";
+   margin-right: 20px
+}
+ ul li{
+    margin-left: 25px;
+    list-style-type: upper-roman;
+    font-size: 20px;
+ }
+
+ nav li{
+    background-color: #f6d5c6;
+    border: 1px solid rgb(239, 219, 219);
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px;
+    width:18%;
+    margin: 15px 15px 0px 0px;
+    text-align: center;
+ }
+
+
+
+ main img{
+    width:100%;
+    padding:15px;
+    margin:0 auto;
+    display: block;
+    max-width: 250px;
+ }
+
+p{
+    font-size:22px;
+    line-height:2;
+    color:darkslategray;
+    background-color: bisque;
+    margin-bottom: 10px;
+    padding:5px;
+ }
+ 
+ .media-gallery{
+   display: grid;
+    grid-template-columns: repeat (2,1fr);
+    width: 100%;
+    grid-gap: 20px;
+    justify-items: center; 
+
+ }
+ .media-gallery video {
+    width: 100%; 
+    height: auto; 
+    max-width: 250px;
+}
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.media-gallery > * {
+  border: 2px solid #ddd;
+  padding: 10px;
+  background-color: #fafafa; 
+  border-radius: 10px; 
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 56px; 
+  }
+
+  .media-gallery {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  nav li {
+    width: auto; 
+    padding: 15px;
+    margin: 15px;
+  }
+
+  nav li:hover {
+    background-color: #fec5a6; 
+    color: white; 
+  }
+
+  main img {
+    max-width: 300px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  ul li{
+    font-size: 24px;
+ }
+}
